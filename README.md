@@ -1,5 +1,5 @@
 # django-tutorial  
-## その1  
+## その１  
  手順  
   - プロジェクト作成  
   django-admin startproject mysite  
@@ -9,7 +9,8 @@
   polls/views.py  
   polls/urls.py  
   mysite/urls.py  
-## その2  
+
+## その２  
  手順  
   - Databaseの設定  
   ENGINE:'django.db.backends.postgresql' ※postgreSQL/dockerを使用   
@@ -28,12 +29,24 @@
   python manage.py createsuperuser  
   - pollsアプリをadmin上で編集できるようにする  
   polls/admin.py  
-## その3  
 
-## その4  
+## その３ 
+ 手順  
+  - オーバービュー(views.index)を使う場合  
+  polls/view.py  
+  - 404エラー検出(views.detail)  
+  - テンプレートシステムを使う  
+  - テンプレート内のハードコードされたurlを削除  
+  polls/templates/polls/index.html  
+  - urlの名前空間  
+  polls/urls.py app_name = 'polls'  
 
-## その5  
+## その４  
+ - フォームの作成  
 
-## その6  
 
-## その7  
+## その５  
+
+## その６  
+
+## その７  
