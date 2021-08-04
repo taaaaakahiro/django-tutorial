@@ -1,9 +1,14 @@
 # django-tutorial  
 ## その1  
- - 手順  
- プロジェクト作成 django-admin startproject mysite  
- アプリケーションを作成  python manage.py startapp polls  
- ビューの作成(アプリ) polls/views.py  polls/urls.py mysite/urls.py  
+ 手順  
+  - プロジェクト作成  
+  django-admin startproject mysite  
+  - アプリケーションを作成  
+  python manage.py startapp polls  
+  - ビューの作成(アプリ)  
+  polls/views.py  
+  polls/urls.py  
+  mysite/urls.py  
 ## その2  
  手順  
   - Databaseの設定  
