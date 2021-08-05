@@ -43,10 +43,31 @@
 
 ## その４  
  - フォームの作成  
-
+ polls/urls.py  
+ polls/views.py  
 
 ## その５  
+ - 自動テストの導入  
+ python manage.py shell 未来の日付の質問のメソッドをチェックするには、 shell を使用してバグを確認  
+ python manage.py test polls  
+ - 解説  
+ manage.py test polls は、polls アプリケーション内にあるテストを探します  
+ django.test.TestCase クラスのサブクラスを発見します  
+ テストのための特別なデータベースを作成します  
+ テスト用のメソッドとして、test で始まるメソッドを探します  
+ test_was_published_recently_with_future_question の中で、pub_date フィールドに今日から30日後の日付を持つ Question インスタンスが作成されます  
+ そして最後に、 assertIs() メソッドを使うことで、本当に返してほしいのは False だったにもかかわらず、 was_published_recently() が True を返していることを発見します  
+ - テスト作成  
+ polls/test.py  
+ - ビューをテスト  
+python manage.py shell  
 
 ## その６  
+ - アプリの構造をカスタマイズ  
+ - 背景画像を追加  
 
 ## その７  
+ - adminフォームのカスタマイズ  
+ - リレーションを貼ったオブジェクトを張ったオブジェクトの追加  
+ - 管理サイトのチェンジリストページをカスタマイズする  
+ - 管理サイトのルック＆フィールをカスタマイズする  
