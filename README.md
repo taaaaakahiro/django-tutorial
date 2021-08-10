@@ -64,10 +64,13 @@ python manage.py shell
 
 ## その６  
  - アプリの構造をカスタマイズ  
- - 背景画像を追加  
+ polls/static/polls/style.css  
+ {% load static %}  
+ <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">  
 
 ## その７  
  - adminフォームのカスタマイズ  
  - リレーションを貼ったオブジェクトを張ったオブジェクトの追加  
  - 管理サイトのチェンジリストページをカスタマイズする  
  - 管理サイトのルック＆フィールをカスタマイズする  
+ polls/admin.py 管理者フォームでフィールドを区切る、表示位置を変更する  
